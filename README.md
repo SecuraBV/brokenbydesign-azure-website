@@ -24,4 +24,4 @@ To deploy a new version, all you have to do is:
 
 
 ## TODO
-- [] Add maitenance page when logo is not loading
+- [ ] Add maitenance page when logo is not loading
