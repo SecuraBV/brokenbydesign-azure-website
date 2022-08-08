@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="An online, open-source Azure CTF challenge called BrokenByDesign: Azure (BrokenAzure.cloud) that is running 24/7 created by Secura.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Security training | Challenge 3 | Hint #3</title>
+    <script src="/inject_html.js" defer></script>
+    <script src="/flag_check.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="container">
+    <div class="content">
+        <div include-html="/header.html" challenge-nr="3" hint-nr="3"></div>
+        <p>
+            Azure has a couple of ways to protect secret information like passwords and connection strings like Key
+            Vaults,
+            Connection String configurations, Function keys and many more.
+        </p>
+        <p>
+            Sadly, one of the most common issues found in security audits, is that these features are not used or not
+            used
+            correctly. In this case, the IT team did not know these features existed. Because they did not expect anyone
+            to
+            be able to login to the DevOps account, they decided to just have secrets in the source code of the Azure
+            Function.
+        </p>
+        <p>
+            The connection string contains a password. This password (and also the flag) is
+            <strong>SECURA{C0NN3CT10N_STR1NG}</strong>.
+        </p>
+        <h2>
+            Submit flag
+        </h2>
+        <input type="text" name="flag" id="flag" class="submit-flag-input" placeholder="Insert flag">
+        <input type="button" value="Submit flag" class="submit-flag-button" id="submit-flag-button">
+        <div include-html="/footer.html"></div>
+    </div>
+</body>
+
+</html>

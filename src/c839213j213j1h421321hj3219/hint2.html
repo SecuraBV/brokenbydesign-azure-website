@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="An online, open-source Azure CTF challenge called BrokenByDesign: Azure (BrokenAzure.cloud) that is running 24/7 created by Secura.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Security training | Challenge 4 | Hint #2</title>
+    <script src="/inject_html.js" defer></script>
+    <script src="/flag_check.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="container">
+    <div class="content">
+        <div include-html="/header.html" challenge-nr="4" hint-nr="2"></div>
+        <p>
+            You can connect to the database using the connection string. <br>
+            There are a lot of ways to connect to a database, in our case, the preferred way is to use the command-line
+            tool
+            named <strong>sqlcmd</strong>. <br>
+            The command you can use to connect is
+            <strong>sqlcmd -S securavulnerableserver.database.windows.net -d securavulnerabledb -U DevOps -P
+                SECURA{C0NN3CTION_STR!NG}</strong>.
+            <br>
+            Once connected, you are able to execute SQl commands on the database. You can request all tables using
+            <strong>SELECT * FROM information_schema.tables;go;</strong>
+
+            Once you have found the table, you can list all data using <strong>SELECT * FROM vpn_employee_data</strong>.
+            The
+            flag
+            is
+            <strong>SECURA{VPN_CR3D3NT14LS}</strong>.
+        </p>
+        <h2>
+            Submit flag
+        </h2>
+        <input type="text" name="flag" id="flag" class="submit-flag-input" placeholder="Insert flag">
+        <input type="button" value="Submit flag" class="submit-flag-button" id="submit-flag-button">
+        <div include-html="/footer.html"></div>
+    </div>
+</body>
+
+</html>

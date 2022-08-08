@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'BR Candor';
+    src: url("/assets/font/BRCandorRegular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'BR Candor';
+    font-weight: bold;
+    src: url("/assets/font/BRCandorBold.otf") format("opentype");
+}
+
+body {
+    font-family: 'BR Candor';
+    background: url("/assets/images/BbD\ Azure\ backdrop_Azure\ bits.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    resize: both;
+    color: white;
+    height: 100%;
+}
+
+div.footer {
+    text-align: center;
+}
+
+img.bbd-logo {
+    max-width: 350px;
+}
+
+img.secura-logo {
+    max-width: 250px;
+}
+
+img.widget {
+    max-width: 55px;
+    cursor: pointer;
+}
+
+img.widget-github {
+    padding-bottom: 10px;
+    margin-left: 10px;
+    max-width: 35px;
+    cursor: pointer;
+}
+
+a.widget-link {
+    padding: 3px
+}
+
+h1.bbg-challenge-name {
+    margin-top: unset;
+    font-size: 60px;
+}
+
+h2 {
+    color: #cf0036;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 5%;
+}
+
+.container .content {
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid white; */
+}
+
+.submit-flag-input {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: #cf0036;
+}
+
+.submit-flag-button {
+    border-color: #cf0036;
+    border-radius: 10px;
+    background-color: #cf0036;
+    color: white;
+    height: 45px;
+    width: 150px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a {
+    color: #cf0036;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: unset;
+}
