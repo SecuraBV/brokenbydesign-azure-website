@@ -89,6 +89,11 @@ h2 {
     cursor: pointer;
 }
 
+.submit-flag-button:disabled {
+    cursor: default;
+    background-color: rgba(239, 239, 239, 0.3);
+}
+
 a {
     color: #cf0036;
     font-weight: bold;
