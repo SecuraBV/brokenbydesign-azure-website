@@ -28,6 +28,7 @@ function checkflag() {
                 if (!array.includes(challengeCompletedNumer)) {
                     array.push(challengeCompletedNumer);
                     array.sort();
+                    localStorage.setItem("completed", JSON.stringify(array));
                 }
             } else {
                 localStorage.setItem("completed", JSON.stringify([challengeCompletedNumer]));
@@ -88,9 +89,7 @@ function checkForMissing() {
     if ([...location.pathname.matchAll('/')].length > 1) {
         var challengeCompletedNumer = (location.pathname[1].charCodeAt(0)) - 97;
         var missing = findMissing(localStorage.getItem("completed"), challengeCompletedNumer);
-        console.log(missing);
         if (missing.length !== 0) {
-            console.log("in here!");
             var challengeWord = missing.length === 1 ? 'challenge ' : 'challenges '
             var itOrThem = missing.length === 1 ? 'it ' : 'them '
             document.getElementById('missing-challenges').innerHTML = document.getElementById('missing-challenges').innerHTML.replace('CHALLENGES_HERE', challengeWord + missing.map(a => a + 1).join(', ')).replace('THEM', itOrThem);
