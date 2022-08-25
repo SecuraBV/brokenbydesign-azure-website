@@ -21,7 +21,3 @@ To deploy a new version, all you have to do is:
 2. Execute `az storage blob upload-batch -s <source-path> -d '$web' --account-name <storage-account-name>` (full command `az storage blob upload-batch -s src/ -d '$web' --account-name vulnwebsite --overwrite`)
 3. ???
 4. ~~Profit!~~ Done!
-
-
-## TODO
-- [ ] Add maitenance page when logo is not loading
