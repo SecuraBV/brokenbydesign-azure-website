@@ -3,6 +3,12 @@
 <h1 class="bbg-challenge-name">
     Azure
 </h1>
+<h3 id="missing-challenges" style="display:none;" onload="checkForMissing()">
+    We have noticed that you did not submit CHALLENGES_HERE. Don't worry, this is not a problem, but feel free to submit
+    THEM now anyway!
+</h3>
 <h2>
     CHALLENGE_NR HINT_NR
 </h2>
+<!-- This is a horrible solution, but this way we start checking for the missing challenges when the header is loaded 🫣 -->
+<img src="" onerror="checkForMissing()" />

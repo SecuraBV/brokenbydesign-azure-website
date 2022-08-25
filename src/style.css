@@ -100,3 +100,8 @@ a {
     text-decoration: none;
     font-size: unset;
 }
+
+h3 {
+    padding: 20px;
+    background-color: rgba(207, 0, 54, 0.9);
+}
