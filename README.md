@@ -9,7 +9,7 @@ This repository contains the source code of the website
 - Link to tool is: https://brokenazure.cloud
 - File issues at: https://github.com/SecuraBV/brokenbydesign-azure-website/issues
 - Link to Terraform source code is: https://github.com/SecuraBV/brokenbydesign-azure
-- Created by: https://www.secura.com/
+- Created by: https://cybersecurity.bureauveritas.com
 
 
 ## Contributing
